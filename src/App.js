@@ -1,12 +1,12 @@
 import { QueryClientProvider } from "react-query";
 import "./App.css";
-import { Table } from "./components/Table/Table";
+import { HomePage } from "./pages/HomePage";
 import { queryClient } from "./utils/queryClient";
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Table></Table>
+      <HomePage />
     </QueryClientProvider>
   );
 }
